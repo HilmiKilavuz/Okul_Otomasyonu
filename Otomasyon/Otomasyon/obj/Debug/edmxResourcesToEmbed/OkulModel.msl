@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OkulOtomasyonuModelStoreContainer" CdmEntityContainer="OkulOtomasyonuEntities1">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_BRANSLAR">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_BRANSLAR">
+        <MappingFragment StoreEntitySet="TBL_BRANSLAR">
+          <ScalarProperty Name="BRANSID" ColumnName="BRANSID" />
+          <ScalarProperty Name="BRANSAD" ColumnName="BRANSAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ILCELER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_ILCELER">
+        <MappingFragment StoreEntitySet="TBL_ILCELER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ILLER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_ILLER">
+        <MappingFragment StoreEntitySet="TBL_ILLER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_OGRENCILER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_OGRENCILER">
+        <MappingFragment StoreEntitySet="TBL_OGRENCILER">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRVELIID" ColumnName="OGRVELIID" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_OGRETMENLER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_OGRETMENLER">
+        <MappingFragment StoreEntitySet="TBL_OGRETMENLER">
+          <ScalarProperty Name="OGRTID" ColumnName="OGRTID" />
+          <ScalarProperty Name="OGRTAD" ColumnName="OGRTAD" />
+          <ScalarProperty Name="OGRTSOYAD" ColumnName="OGRTSOYAD" />
+          <ScalarProperty Name="OGRTTC" ColumnName="OGRTTC" />
+          <ScalarProperty Name="OGRTTEL" ColumnName="OGRTTEL" />
+          <ScalarProperty Name="OGRTMAIL" ColumnName="OGRTMAIL" />
+          <ScalarProperty Name="OGRTIL" ColumnName="OGRTIL" />
+          <ScalarProperty Name="OGRTILCE" ColumnName="OGRTILCE" />
+          <ScalarProperty Name="OGRTADRES" ColumnName="OGRTADRES" />
+          <ScalarProperty Name="OGRTBRANS" ColumnName="OGRTBRANS" />
+          <ScalarProperty Name="OGRTFOTO" ColumnName="OGRTFOTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_VELILER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_VELILER">
+        <MappingFragment StoreEntitySet="TBL_VELILER">
+          <ScalarProperty Name="VELIID" ColumnName="VELIID" />
+          <ScalarProperty Name="VELIANNE" ColumnName="VELIANNE" />
+          <ScalarProperty Name="VELIBABA" ColumnName="VELIBABA" />
+          <ScalarProperty Name="VELITEL1" ColumnName="VELITEL1" />
+          <ScalarProperty Name="VELITEL2" ColumnName="VELITEL2" />
+          <ScalarProperty Name="VELIMAIL" ColumnName="VELIMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_AYARLAR">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_AYARLAR">
+        <MappingFragment StoreEntitySet="TBL_AYARLAR">
+          <ScalarProperty Name="OGRTSIFRE" ColumnName="OGRTSIFRE" />
+          <ScalarProperty Name="AYARLARID" ColumnName="AYARLARID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_DERSLER">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_DERSLER">
+        <MappingFragment StoreEntitySet="TBL_DERSLER">
+          <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+          <ScalarProperty Name="DERSID" ColumnName="DERSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_NOTLAR">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_NOTLAR">
+        <MappingFragment StoreEntitySet="TBL_NOTLAR">
+          <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+          <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+          <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+          <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+          <ScalarProperty Name="NOTDERSID" ColumnName="NOTDERSID" />
+          <ScalarProperty Name="NOTOGRID" ColumnName="NOTOGRID" />
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_OGRAYARLAR">
+      <EntityTypeMapping TypeName="OkulOtomasyonuModel.TBL_OGRAYARLAR">
+        <MappingFragment StoreEntitySet="TBL_OGRAYARLAR">
+          <ScalarProperty Name="OGRSIFRE" ColumnName="OGRSIFRE" />
+          <ScalarProperty Name="AYARLAROGRID" ColumnName="AYARLAROGRID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AyarlarOgrenci" FunctionName="OkulOtomasyonuModel.Store.AyarlarOgrenci">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.AyarlarOgrenci_Result">
+          <ScalarProperty Name="AYARLAROGRID" ColumnName="AYARLAROGRID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSIFRE" ColumnName="OGRSIFRE" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AyarlarOgretmenler" FunctionName="OkulOtomasyonuModel.Store.AyarlarOgretmenler">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.AyarlarOgretmenler_Result">
+          <ScalarProperty Name="AYARLARID" ColumnName="AYARLARID" />
+          <ScalarProperty Name="OGRTADSOYAD" ColumnName="OGRTADSOYAD" />
+          <ScalarProperty Name="OGRTBRANS" ColumnName="OGRTBRANS" />
+          <ScalarProperty Name="OGRTTC" ColumnName="OGRTTC" />
+          <ScalarProperty Name="OGRTSIFRE" ColumnName="OGRTSIFRE" />
+          <ScalarProperty Name="OGRTFOTO" ColumnName="OGRTFOTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="notlarogrenci5" FunctionName="OkulOtomasyonuModel.Store.notlarogrenci5">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.notlarogrenci5_Result">
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+          <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+          <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+          <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+          <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="notlarogrenci6" FunctionName="OkulOtomasyonuModel.Store.notlarogrenci6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.notlarogrenci6_Result">
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+          <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+          <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+          <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+          <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="notlarogrenci7" FunctionName="OkulOtomasyonuModel.Store.notlarogrenci7">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.notlarogrenci7_Result">
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+          <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+          <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+          <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+          <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="notlarogrenci8" FunctionName="OkulOtomasyonuModel.Store.notlarogrenci8">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.notlarogrenci8_Result">
+          <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRADSOYAD" ColumnName="OGRADSOYAD" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+          <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+          <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+          <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+          <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OgrenciVeli5" FunctionName="OkulOtomasyonuModel.Store.OgrenciVeli5">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.OgrenciVeli5_Result">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+          <ScalarProperty Name="VELIANNEBABA" ColumnName="VELIANNEBABA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OgrenciVeli6" FunctionName="OkulOtomasyonuModel.Store.OgrenciVeli6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.OgrenciVeli6_Result">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+          <ScalarProperty Name="VELIANNEBABA" ColumnName="VELIANNEBABA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OgrenciVeli7" FunctionName="OkulOtomasyonuModel.Store.OgrenciVeli7">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.OgrenciVeli7_Result">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+          <ScalarProperty Name="VELIANNEBABA" ColumnName="VELIANNEBABA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OgrenciVeli8" FunctionName="OkulOtomasyonuModel.Store.OgrenciVeli8">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.OgrenciVeli8_Result">
+          <ScalarProperty Name="OGRID" ColumnName="OGRID" />
+          <ScalarProperty Name="OGRAD" ColumnName="OGRAD" />
+          <ScalarProperty Name="OGRSOYAD" ColumnName="OGRSOYAD" />
+          <ScalarProperty Name="OGRTC" ColumnName="OGRTC" />
+          <ScalarProperty Name="OGRSINIF" ColumnName="OGRSINIF" />
+          <ScalarProperty Name="OGRNO" ColumnName="OGRNO" />
+          <ScalarProperty Name="OGRDOGTAR" ColumnName="OGRDOGTAR" />
+          <ScalarProperty Name="OGRCINSIYET" ColumnName="OGRCINSIYET" />
+          <ScalarProperty Name="OGRIL" ColumnName="OGRIL" />
+          <ScalarProperty Name="OGRILCE" ColumnName="OGRILCE" />
+          <ScalarProperty Name="OGRADRES" ColumnName="OGRADRES" />
+          <ScalarProperty Name="OGRFOTO" ColumnName="OGRFOTO" />
+          <ScalarProperty Name="VELIANNEBABA" ColumnName="VELIANNEBABA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="OkulOtomasyonuModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="OkulOtomasyonuModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="OkulOtomasyonuModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="OkulOtomasyonuModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="OkulOtomasyonuModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OkulOtomasyonuModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="OkulOtomasyonuModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="OkulOtomasyonuModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

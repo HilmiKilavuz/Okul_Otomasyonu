@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="012e59c14a3f46758566efbe6e90fbd6" Name="Diagram1" ZoomLevel="106">
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_BRANSLAR" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_ILCELER" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_ILLER" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_OGRENCILER" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_OGRETMENLER" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_VELILER" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="OkulOtomasyonuModel.FK_TBL_OGRENCILER_TBL_VELILER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_AYARLAR" Width="1.5" PointX="7" PointY="7.625" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_DERSLER" Width="1.5" PointX="6" PointY="14.25" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_NOTLAR" Width="1.5" PointX="8.25" PointY="1.625" />
+        <EntityTypeShape EntityType="OkulOtomasyonuModel.TBL_OGRAYARLAR" Width="1.5" PointX="5.25" PointY="11.75" />
+        <AssociationConnector Association="OkulOtomasyonuModel.FK_TBL_AYARLAR_TBL_OGRETMENLER" />
+        <AssociationConnector Association="OkulOtomasyonuModel.FK_TBL_NOTLAR_TBL_DERSLER" />
+        <AssociationConnector Association="OkulOtomasyonuModel.FK_TBL_NOTLAR_TBL_OGRENCILER" />
+        <AssociationConnector Association="OkulOtomasyonuModel.FK_TBL_OGRAYARLAR_TBL_OGRENCILER" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

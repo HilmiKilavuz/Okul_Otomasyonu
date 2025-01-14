@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OkulOtomasyonuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TBL_AYARLAR">
+    <Key>
+      <PropertyRef Name="AYARLARID" />
+    </Key>
+    <Property Name="AYARLARID" Type="int" Nullable="false" />
+    <Property Name="OGRTSIFRE" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBL_BRANSLAR">
+    <Key>
+      <PropertyRef Name="BRANSID" />
+    </Key>
+    <Property Name="BRANSID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BRANSAD" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_DERSLER">
+    <Key>
+      <PropertyRef Name="DERSID" />
+    </Key>
+    <Property Name="DERSID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DERSAD" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_ILCELER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+    <Property Name="sehir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_ILLER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sehir" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="TBL_NOTLAR">
+    <Key>
+      <PropertyRef Name="NOTID" />
+    </Key>
+    <Property Name="NOTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOTOGRID" Type="int" />
+    <Property Name="NOTDERSID" Type="int" />
+    <Property Name="SINAV1" Type="int" />
+    <Property Name="SINAV2" Type="int" />
+    <Property Name="SINAV3" Type="int" />
+    <Property Name="ORTALAMA" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_OGRAYARLAR">
+    <Key>
+      <PropertyRef Name="AYARLAROGRID" />
+    </Key>
+    <Property Name="AYARLAROGRID" Type="int" Nullable="false" />
+    <Property Name="OGRSIFRE" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TBL_OGRENCILER">
+    <Key>
+      <PropertyRef Name="OGRID" />
+    </Key>
+    <Property Name="OGRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OGRAD" Type="varchar" MaxLength="30" />
+    <Property Name="OGRSOYAD" Type="varchar" MaxLength="30" />
+    <Property Name="OGRNO" Type="char" MaxLength="4" />
+    <Property Name="OGRSINIF" Type="char" MaxLength="7" />
+    <Property Name="OGRDOGTAR" Type="char" MaxLength="10" />
+    <Property Name="OGRCINSIYET" Type="nchar" MaxLength="1" />
+    <Property Name="OGRTC" Type="char" MaxLength="11" />
+    <Property Name="OGRVELIID" Type="int" />
+    <Property Name="OGRIL" Type="varchar" MaxLength="13" />
+    <Property Name="OGRILCE" Type="varchar" MaxLength="20" />
+    <Property Name="OGRADRES" Type="varchar" MaxLength="100" />
+    <Property Name="OGRFOTO" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TBL_OGRETMENLER">
+    <Key>
+      <PropertyRef Name="OGRTID" />
+    </Key>
+    <Property Name="OGRTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OGRTAD" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="OGRTSOYAD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OGRTTC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="OGRTTEL" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="OGRTMAIL" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="OGRTIL" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="OGRTILCE" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="OGRTADRES" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OGRTBRANS" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="OGRTFOTO" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TBL_VELILER">
+    <Key>
+      <PropertyRef Name="VELIID" />
+    </Key>
+    <Property Name="VELIID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VELIANNE" Type="varchar" MaxLength="30" />
+    <Property Name="VELIBABA" Type="varchar" MaxLength="30" />
+    <Property Name="VELITEL1" Type="char" MaxLength="15" />
+    <Property Name="VELITEL2" Type="char" MaxLength="15" />
+    <Property Name="VELIMAIL" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <Association Name="FK_TBL_AYARLAR_TBL_OGRETMENLER">
+    <End Role="TBL_OGRETMENLER" Type="Self.TBL_OGRETMENLER" Multiplicity="1" />
+    <End Role="TBL_AYARLAR" Type="Self.TBL_AYARLAR" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_OGRETMENLER">
+        <PropertyRef Name="OGRTID" />
+      </Principal>
+      <Dependent Role="TBL_AYARLAR">
+        <PropertyRef Name="AYARLARID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_NOTLAR_TBL_DERSLER">
+    <End Role="TBL_DERSLER" Type="Self.TBL_DERSLER" Multiplicity="0..1" />
+    <End Role="TBL_NOTLAR" Type="Self.TBL_NOTLAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_DERSLER">
+        <PropertyRef Name="DERSID" />
+      </Principal>
+      <Dependent Role="TBL_NOTLAR">
+        <PropertyRef Name="NOTDERSID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_NOTLAR_TBL_OGRENCILER">
+    <End Role="TBL_OGRENCILER" Type="Self.TBL_OGRENCILER" Multiplicity="0..1" />
+    <End Role="TBL_NOTLAR" Type="Self.TBL_NOTLAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_OGRENCILER">
+        <PropertyRef Name="OGRID" />
+      </Principal>
+      <Dependent Role="TBL_NOTLAR">
+        <PropertyRef Name="NOTOGRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_OGRAYARLAR_TBL_OGRENCILER">
+    <End Role="TBL_OGRENCILER" Type="Self.TBL_OGRENCILER" Multiplicity="1" />
+    <End Role="TBL_OGRAYARLAR" Type="Self.TBL_OGRAYARLAR" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_OGRENCILER">
+        <PropertyRef Name="OGRID" />
+      </Principal>
+      <Dependent Role="TBL_OGRAYARLAR">
+        <PropertyRef Name="AYARLAROGRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_OGRENCILER_TBL_VELILER">
+    <End Role="TBL_VELILER" Type="Self.TBL_VELILER" Multiplicity="0..1" />
+    <End Role="TBL_OGRENCILER" Type="Self.TBL_OGRENCILER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_VELILER">
+        <PropertyRef Name="VELIID" />
+      </Principal>
+      <Dependent Role="TBL_OGRENCILER">
+        <PropertyRef Name="OGRVELIID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AyarlarOgrenci" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="AyarlarOgretmenler" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="notlarogrenci5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="notlarogrenci6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="notlarogrenci7" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="notlarogrenci8" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="OgrenciVeli5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="OgrenciVeli6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="OgrenciVeli7" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="OgrenciVeli8" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="OkulOtomasyonuModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_AYARLAR" EntityType="Self.TBL_AYARLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_BRANSLAR" EntityType="Self.TBL_BRANSLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_DERSLER" EntityType="Self.TBL_DERSLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ILCELER" EntityType="Self.TBL_ILCELER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_ILLER" EntityType="Self.TBL_ILLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_NOTLAR" EntityType="Self.TBL_NOTLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_OGRAYARLAR" EntityType="Self.TBL_OGRAYARLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_OGRENCILER" EntityType="Self.TBL_OGRENCILER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_OGRETMENLER" EntityType="Self.TBL_OGRETMENLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_VELILER" EntityType="Self.TBL_VELILER" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBL_AYARLAR_TBL_OGRETMENLER" Association="Self.FK_TBL_AYARLAR_TBL_OGRETMENLER">
+      <End Role="TBL_OGRETMENLER" EntitySet="TBL_OGRETMENLER" />
+      <End Role="TBL_AYARLAR" EntitySet="TBL_AYARLAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_NOTLAR_TBL_DERSLER" Association="Self.FK_TBL_NOTLAR_TBL_DERSLER">
+      <End Role="TBL_DERSLER" EntitySet="TBL_DERSLER" />
+      <End Role="TBL_NOTLAR" EntitySet="TBL_NOTLAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_NOTLAR_TBL_OGRENCILER" Association="Self.FK_TBL_NOTLAR_TBL_OGRENCILER">
+      <End Role="TBL_OGRENCILER" EntitySet="TBL_OGRENCILER" />
+      <End Role="TBL_NOTLAR" EntitySet="TBL_NOTLAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_OGRAYARLAR_TBL_OGRENCILER" Association="Self.FK_TBL_OGRAYARLAR_TBL_OGRENCILER">
+      <End Role="TBL_OGRENCILER" EntitySet="TBL_OGRENCILER" />
+      <End Role="TBL_OGRAYARLAR" EntitySet="TBL_OGRAYARLAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_OGRENCILER_TBL_VELILER" Association="Self.FK_TBL_OGRENCILER_TBL_VELILER">
+      <End Role="TBL_VELILER" EntitySet="TBL_VELILER" />
+      <End Role="TBL_OGRENCILER" EntitySet="TBL_OGRENCILER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
